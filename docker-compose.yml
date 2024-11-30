@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ml_project:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8089:80
+      - 8092:8080
+    command: sleep infinity
